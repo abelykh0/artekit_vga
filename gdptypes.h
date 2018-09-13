@@ -27,19 +27,17 @@
 #define	NULL			0x0
 
 //	Types
-
-typedef	unsigned int	u32;
 typedef	int				i32;
 typedef	unsigned short	u16;
 typedef	short			i16;
 typedef	unsigned char	u8;
-typedef	char			i8;
-
-typedef	u32				*pu32;
-typedef	i32				*pi32;
 typedef u16				*pu16;
-typedef i16				*pi16;
-typedef	u8				*pu8;
-typedef i8				*pi8;
+
+// Compatibility with GCC
+typedef	char			*pu8;
+#define __irq
+#define __packed
+#define __gccPacked __attribute__((packed))
+#define __align(x) __attribute__ ((aligned (x)))
 
 #endif	// __GDPTYPES_H

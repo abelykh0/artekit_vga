@@ -48,7 +48,7 @@ typedef __packed  struct
 	i16		w;							// Width
 	i16		h;							// Height
 
-} GDI_RECT, *PGDI_RECT;
+} __gccPacked  GDI_RECT, *PGDI_RECT;
 
 #define	GDI_WINCAPTION			0x0001
 #define	GDI_WINBORDER			0x0002
@@ -67,7 +67,7 @@ typedef __packed struct
 	GDI_RECT		rc;					// Absolute rectangle
 	pu8				caption;			// Caption text
 
-} GDI_WINDOW, *PGDI_WINDOW;
+} __gccPacked GDI_WINDOW, *PGDI_WINDOW;
 
 typedef __packed struct
 {
