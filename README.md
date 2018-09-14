@@ -1,7 +1,7 @@
 # VGA output using a 36-pin STM32
 https://www.artekit.eu/vga-output-using-a-36-pin-stm32/
 
-How to connect wires (in case the above link is not working):
+# How to connect wires (in case the above link is not working):
 
 | PIN | Description | Connect To | Output |
 | --- | ----------- | ---------- | ------ |
